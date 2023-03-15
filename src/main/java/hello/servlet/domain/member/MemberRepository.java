@@ -13,7 +13,7 @@ public class MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();  // key = id, value = Member
     private static long sequence = 0L;  // id가 하나씩 증가하는 시퀀스
 
-    private static final MemberRepository instance = new MemberRepository();  // 싱글톤 객체 생성 (private으로 생성자를 막음)
+    private static final MemberRepository instance = new MemberRepository();  // 싱글톤 객체 생성
 
     public static MemberRepository getInstance() {
         return instance;
